@@ -1,4 +1,4 @@
-package wordgen
+package main
 
 import (
 	"fmt"
