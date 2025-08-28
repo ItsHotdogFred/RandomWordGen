@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"os"
 	"strconv"
@@ -24,14 +23,8 @@ var (
 	lcgC = uint64(1013904223)
 )
 
-func main() {
-	// ✅ This is the function you run to get a new string
-	newString := getNextString()
-	fmt.Println(newString)
-}
-
 // getNextString generates the next unique string of words
-func getNextString() string {
+func GetNextString() string {
 	currentID := loadCounter()
 
 	if currentID >= uint64(totalPossible) {
