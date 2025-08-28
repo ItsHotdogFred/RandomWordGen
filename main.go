@@ -1,4 +1,4 @@
-package main
+package wordgen
 
 import (
 	"log"
